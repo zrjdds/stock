@@ -1,0 +1,32 @@
+﻿建新项目，上传
+git init
+git config --global user.email "zrjdds@163.com"
+git config --global user.name "zrjdds@163.com"
+git add *
+git commit -m "first commit"
+git remote add orgin https://github.com/zrjdds/stock.git
+git push -u orgin master
+输入账号密码
+zrjdds@163.com/密码盛日
+
+查看当前的分支是哪个
+git branch
+
+建立一个新的分支
+git checkout -b 20180822
+
+切换回主分支
+git checkout master
+
+往新的分支上传
+git init
+#git config http.proxy http://cmproxy.gmcc.net:8081
+#git config https.proxy https://cmproxy.gmcc.net:8081
+git config --global --unset http.proxy
+git config --global --unset https.proxy
+git add *
+git commit -m "20180822"
+git remote add orgin https://github.com/zrjdds/documents.git
+git push -u orgin 20180822
+输入账号密码
+zrjdds@163.com/密码盛日
